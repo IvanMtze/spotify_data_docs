@@ -1,0 +1,152 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\date{\today}
+
+\begin{document}
+ 	\include{caratula}
+
+\tableofcontents
+\newpage
+\section{Introducción}
+\vspace{0.5 cm}
+En el presente documento se identifican los aspectos correspondientes a la visión y alcance de este proyecto.\\
+\\ El proyecto Spotify-Data es un proyecto donde se requiere poner a prueba conocimientos de administración de proyectos y pruebas de software con respecto al primer parcial.
+		
+\section{Definiciones}
+\vspace{0.5 cm}
+\textbf {UML}: Unified Modeling Language, por sus siglas en inglés, la cual traduce
+Lenguaje Unificado de Modelado.\\
+
+\textbf {HTML}: HyperText Markup Language, por sus siglas en inglés, es un lenguaje
+basado en etiquetas usado en el desarrollo web el cual brinda un estándar para
+la definición de la estructura y para la definición de contenido de la página web
+como: texto, imágenes y videos.\\
+
+\textbf {Angular}: Framework para desarrollo de aplicaciones web desarrollado en TypeScript, de código abierto y mantenido por Google.\\
+
+\section{Historial de revisiones}
+\vspace{0.5 cm}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{0.35\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|p{0.15\linewidth}|}
+\hline
+\textbf{Nombre}&\textbf{Fecha}&\textbf{Razón del cambio}&\textbf{Versión}
+\\\hline
+Víctor Iván Medel Ayohua&3/10/2020&Revisión inicial&v1.1\\\hline
+Víctor Iván Medel Ayohua&5/10/2020&Definición de la estructura inicial del documento&v1.2\\\hline
+Víctor Iván Medel Ayohua&3/10/2020&Redacción de las Definiciones técnicas utilizadas&v1.3\\\hline
+Víctor Iván Medel Ayohua&3/10/2020&Redacción de los requerimientos del sistema&v1.4\\\hline
+\end{tabular}
+\end{table}
+
+\chapter{Requerimientos del negocio}
+Los requerimientos del negocio proporcionan la base y la referencia de la necesidad que se pretende satisfacer.\\
+A partir de estos requerimientos nosotros identificamos los objetivos y tareas que los usuarios realizaran con esta herramienta.
+\section{Escenario}
+\vspace{0.5 cm}
+Spotify-Data esta destinado a mejorar la experiencia de los usuarios finales y artistas, a través de una pagina principal que permitirá visualizar al usuario final las canciones reproducidas por el en el ultimo mes, a los artistas el numero de reproducciones que han tenido sus canciones en el ultimo mes, el porcentaje que ocupa cada canción del total de reproducciones y los países principales donde sus canciones tienen mas reproducciones.
+\section{Oportunidad de negocio}
+\vspace{0.5 cm}
+El proyecto sera valioso por que mejorara la experiencia de los usuarios y mostrara información detallada de acuerdo a las acciones que ah realizado frecuentemente.
+\section{Objetivos del negocio y criterios de éxito}
+\vspace{0.5 cm}
+Ayudar al usuario mejorando su experiencia de uso en una herramienta de entretenimiento.\\ 
+Desde una pagina principal intuitiva donde navegar por las distintas secciones nos muestra la información mas relevante. 
+El valor obtenido del proyecto se vera reflejado por el uso cada vez mayor de nuevos usuarios y la aceptación de los mismos.
+\newpage
+\vspace{0.5 cm}
+\section{Necesidades del cliente o del mercado}
+\vspace{0.5 cm}
+Spotify-data satisface la necesidad de un usuario de internet que quiere conocer estadísticas musicales.\\
+Desde las mas populares o mas reproducidas actualmente proporcionando atajos desde su pagina principal con la lista de los sencillos que han consultado en días posteriores.\\
+
+\textbf{Principalmente el sistema deberá cumplir los siguientes requisitos: }
+\vspace{0.5 cm}
+\begin{itemize}
+\item \textit{Se ejecutara en un servidor en la nube.}
+\item \textit{Podrá ejecutar consultas a la base de datos en cualquier momento.}
+\item \textit{Tendrá la capacidad de refrescar la sección en uso sin tener que refrescar toda la pagina.}
+\item \textit{Tendrá la capacidad de conectarse a una api.}
+\item \textit{Deberá mostrar fácilmente la información mas relevante a los usuarios y de forma detallada si el lo desea.}
+\item \textit{Deberá incorporar caracteres que sean visibles en la mayoría de los navegadores.}
+\item \textit{Deberá permitir navegar por las diferentes secciones de interés a los usuarios.}
+\item \textit{Deberá mostrar la información agrupada en tablas o graficas.}
+\end{itemize}
+
+\chapter{Visión de la solución}
+
+\section{Declaración de la visión}
+\vspace{0.5 cm}
+Spotify-data es una herramienta de software diseñada para visualizar estadísticas sobre temas musicales con información especifica para conocer el numero de reproducciones que tuvo algún tema musical durante una década y saber desde que países estuvo en reproducción ese tema y el porcentaje del total de reproducciones que ocupa ese país del total, permitiendo que los usuarios conozcan mas acerca de los temas musicales de su preferencia.
+\section{Características principales}
+\vspace{0.5 cm}
+\textbf {Requerimientos funcionales:}
+\vspace{0.5 cm}
+\begin{itemize}
+\item \textit{El sistema sera una aplicación web}
+\item \textit{Utilizar la base de datos para recopilar la información.}
+\item \textit{La información se mostrara en graficas.}
+\item \textit{Acceder al sistema a través de un proceso de autentificación.}
+\item \textit{Registrar una cuenta a los usuarios nuevos.}
+\item \textit{Visualizar los datos estadísticos por cada tema musical.}
+\item \textit{Deberá permitir navegar por las diferentes secciones de interés a los usuarios.}
+\item \textit{Deberá mostrar la información agrupada en tablas o graficas.}
+\end{itemize}
+\newpage
+\textbf {Requerimientos no funcionales:}
+\vspace{0.5 cm}
+\begin{itemize}
+\item \textit{El tiempo de carga de la información no deberá superar los 30 segundos.}
+\item \textit{Presentara una interfaz intuitiva y completa para el fácil manejo de los usuarios.}
+\item \textit{El acceso a los datos deberá ser de forma segura.}
+\item \textit{El proyecto sera administrado en git.}
+\item \textit{Branch protegidos.}
+\item \textit{Funcionar en todos los navegadores web modernos.}
+\item \textit{Buen manejo de la documentación y control de versiones.}
+\end{itemize}
+
+\chapter{Alcance y limitaciones}
+
+\section{Alcance de la version inicial}
+\vspace{0.5 cm}
+Se ha establecido un lanzamiento inicial que sirva como prueba del concepto final para este primer periodo de evaluación donde se define bien la arquitectura de nuestro sistema.
+Esta version inicial consiste en una demostración de los conocimientos adquiridos en las experiencias educativas de administración de proyectos de software y pruebas de software que incluirá lo siguiente: \\
+\vspace{0.5 cm}
+\begin{itemize}
+\item \textit{Diseño completo del sistema.}
+\item \textit{issues definidos para esta primera version.}
+\item \textit{Métodos funcionales de los requerimientos establecidos.}
+\item \textit{Pruebas definidas y programadas para cada componente y modulo.}
+\item \textit{Servidor levantado y funcionando correctamente con el sistema.}
+\item \textit{Sistema en producción con la version inicial.}
+\end{itemize} 
+
+\section{Alcance de las versiones posteriores}
+\vspace{0.5 cm}
+
+\chapter{Contexto del negocio}
+
+\section{Perfil de los involucrados}
+\vspace{0.5 cm}
+
+\section{Prioridades del proyecto}
+\vspace{0.5 cm}
+
+\section{Entorno operativo}
+\vspace{0.5 cm}
+
+\includegraphics[scale=0.1]{uvlogo}
+
+	 	
+\chapter{Conclusiones} 
+	 
+  
+\end{document}
