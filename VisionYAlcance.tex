@@ -44,6 +44,8 @@ Víctor Iván Medel Ayohua&3/10/2020&Revisión inicial&v1.1\\\hline
 Víctor Iván Medel Ayohua&5/10/2020&Definición de la estructura inicial del documento&v1.2\\\hline
 Víctor Iván Medel Ayohua&3/10/2020&Redacción de las Definiciones técnicas utilizadas&v1.3\\\hline
 Víctor Iván Medel Ayohua&3/10/2020&Redacción de los requerimientos del sistema&v1.4\\\hline
+Víctor Iván Medel Ayohua&6/10/2020&Redacción del capitulo 2&v1.5\\\hline
+Víctor Iván Medel Ayohua&7/10/2020&Redacción del capitulo 3,4 &v2.1\\\hline
 \end{tabular}
 \end{table}
 
@@ -71,10 +73,13 @@ Desde las mas populares o mas reproducidas actualmente proporcionando atajos des
 \textbf{Principalmente el sistema deberá cumplir los siguientes requisitos: }
 \vspace{0.5 cm}
 \begin{itemize}
-\item \textit{Se ejecutara en un servidor en la nube.}
-\item \textit{Podrá ejecutar consultas a la base de datos en cualquier momento.}
+\item \textit{Se podrá acceder al sistema desde algún navegador.}
+\item \textit{El usuario podrá consultar información detallada sobre algún tema musical.}
+\item \textit{El usuario tendrá la capacidad de consultar sus playlist.}
+\item \textit{El administrador tendrá acceso a una vista con mayor información que la de un usuario final.}
+\item \textit{El usuario tendrá la posibilidad de crear una cuenta.}
+\item \textit{El usuario tendrá la posibilidad de ver las acciones que ah realizado frecuentemente desde su home del sistema.}
 \item \textit{Tendrá la capacidad de refrescar la sección en uso sin tener que refrescar toda la pagina.}
-\item \textit{Tendrá la capacidad de conectarse a una api.}
 \item \textit{Deberá mostrar fácilmente la información mas relevante a los usuarios y de forma detallada si el lo desea.}
 \item \textit{Deberá incorporar caracteres que sean visibles en la mayoría de los navegadores.}
 \item \textit{Deberá permitir navegar por las diferentes secciones de interés a los usuarios.}
@@ -91,14 +96,18 @@ Spotify-data es una herramienta de software diseñada para visualizar estadísti
 \textbf {Requerimientos funcionales:}
 \vspace{0.5 cm}
 \begin{itemize}
-\item \textit{El sistema sera una aplicación web}
+\item \textit{Se podrá acceder al sistema desde algún navegador.}
 \item \textit{Utilizar la base de datos para recopilar la información.}
 \item \textit{La información se mostrara en graficas.}
 \item \textit{Acceder al sistema a través de un proceso de autentificación.}
-\item \textit{Registrar una cuenta a los usuarios nuevos.}
-\item \textit{Visualizar los datos estadísticos por cada tema musical.}
+\item \textit{El usuario tendrá la capacidad de consultar sus playlist.}
+\item \textit{El administrador tendrá acceso a una vista con mayor información que la de un usuario final.}
+\item \textit{El usuario tendrá la posibilidad de crear una cuenta.}
+\item \textit{El usuario tendrá la posibilidad de ver las acciones que ah realizado frecuentemente desde su home del sistema.}
+\item \textit{El administrador podrá visualizar datos estadísticos mas específicos por cada tema musical.}
 \item \textit{Deberá permitir navegar por las diferentes secciones de interés a los usuarios.}
-\item \textit{Deberá mostrar la información agrupada en tablas o graficas.}
+\item \textit{El usuario tendrá la opción de ver la información de los temas musicales agrupados en tablas o graficas.}
+\item \textit{El usuario no tendrá acceso a la aplicación sin tener una cuenta.}
 \end{itemize}
 \newpage
 \textbf {Requerimientos no funcionales:}
@@ -106,8 +115,12 @@ Spotify-data es una herramienta de software diseñada para visualizar estadísti
 \begin{itemize}
 \item \textit{El tiempo de carga de la información no deberá superar los 30 segundos.}
 \item \textit{Presentara una interfaz intuitiva y completa para el fácil manejo de los usuarios.}
+\item \textit{Cada pantalla deberá tener un diseño atractivo a la vista del usuario.}
 \item \textit{El acceso a los datos deberá ser de forma segura.}
+\item \textit{Tendrá la capacidad de conectarse a una api.}
 \item \textit{El proyecto sera administrado en git.}
+\item \textit{Utilizar kanban automatizados para la administración del repositorio.}
+\item \textit{Cada pull request debera ser autorizado por el lider del proyecto.}
 \item \textit{Branch protegidos.}
 \item \textit{Funcionar en todos los navegadores web modernos.}
 \item \textit{Buen manejo de la documentación y control de versiones.}
@@ -128,7 +141,8 @@ Esta version inicial consiste en una demostración de los conocimientos adquirid
 \item \textit{Métodos funcionales de los requerimientos establecidos.}
 \item \textit{El sistema utilizara Hard-code para esta version.}
 \item \textit{Pruebas definidas y programadas para cada componente y modulo.}
-\item \textit{Servidor levantado y funcionando correctamente con el sistema hasta la version inicial.}
+\item \textit{Servidor levantado y funcionando correctamente.}
+\item \textit{sacar a producción la version inicial inicial del proyecto antes del 9/10/2020}
 \item \textit{Sistema en producción con la version inicial.}
 \end{itemize} 
 \newpage
